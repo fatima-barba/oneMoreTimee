@@ -1,6 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/matchAutoLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/matchAutoLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_teamAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Text:"/>
+
+        <TextView
+            android:id="@+id/tv_matchAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Match:"/>
+
+        <TextView
+            android:id="@+id/tv_allianceAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alliance:"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/cornflowerBlue"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/matchAutoLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_upperHubAutoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Upper Hub"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_autoPlusL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightGreen"
+            android:ems="9"
+            android:textSize="20sp"
+            android:text="+"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_upperScoreAuto" />
+
+        <TextView
+            android:id="@+id/tv_upperScoreAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_autoMinusL"
+            app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_autoPlusL" />
+
+        <Button
+            android:id="@+id/btn_autoMinusL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightRed"
+            android:ems="9"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
+            app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_lowerHubAutoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Lower Hub"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/matchAutoLayout3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_autoPlusR"
+            android:layout_width="wrap_content"
+            android:layout_height="70sp"
+            android:ems="9"
+            android:text="+"
+            android:backgroundTint="@color/lightGreen"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/matchAutoLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lowerHubAutoHeader" />
+
+        <TextView
+            android:id="@+id/tv_lowerScoreAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_autoMinusR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/matchAutoLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_autoPlusR" />
+
+        <Button
+            android:id="@+id/btn_autoMinusR"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:ems="9"
+            android:text="-"
+            android:backgroundTint="@color/lightRed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/matchAutoLayout3" />
+
+        <LinearLayout
+            android:id="@+id/matchAutoLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/auto_tele_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_scoreQuestionAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:text="Score"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/cb_taxiing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taxiing" />
+
+            <CheckBox
+                android:id="@+id/cb_humanPlayerUpper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Human Player Upper Hub" />
+
+            <CheckBox
+                android:id="@+id/humanPlayerLower_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Human Player Lower Hub" />
+
+            <CheckBox
+                android:id="@+id/cb_upperHubAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upper Hub" />
+
+            <CheckBox
+                android:id="@+id/cb_lowerHubAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lower Hub" />
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/auto_tele_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/auto_tele_bar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

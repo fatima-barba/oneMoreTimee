@@ -1,6 +1,362 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/matchTeleLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/matchTeleLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_teamTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Team:"/>
+
+        <TextView
+            android:id="@+id/tv_matchTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Match:"/>
+
+        <TextView
+            android:id="@+id/tv_allianceTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alliance:"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/cornflowerBlue"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_upperHubTeleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Upper Hub"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_telePlusL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightGreen"
+            android:ems="9"
+            android:text="+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_upperHubTeleHeader" />
+
+        <TextView
+            android:id="@+id/tv_upperScoreTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_teleMinusL"
+            app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_telePlusL" />
+
+        <Button
+            android:id="@+id/btn_teleMinusL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightRed"
+            android:ems="9"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
+            app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_lowerHubTeleHeader"
+            android:layout_width="214dp"
+            android:layout_height="26dp"
+            android:ems="9"
+            android:text="Lower Hub"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_telePlusR"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightGreen"
+            android:ems="9"
+            android:text="+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lowerHubTeleHeader" />
+
+        <TextView
+            android:id="@+id/tv_lowerScoreTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_teleMinusR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_telePlusR" />
+
+        <Button
+            android:id="@+id/btn_teleMinusR"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightRed"
+            android:ems="9"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/matchTeleLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_scoreQuestionTele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:text="Score"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_upperHubShotTele"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Upper Hub"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_lowerHubShotTele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lower Hub"/>
+
+                <TextView
+                    android:id="@+id/tv_endGameQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Endgame"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Climbing"
+                    android:textSize="20sp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_lowerRungClimbTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="9"
+                        android:text="Low"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_midRungClimbTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="9"
+                        android:text="Mid"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_highRungClimbTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="9"
+                        android:text="High"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_traversalRungClimbTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="9"
+                        android:text="Traversal"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_penaltiesQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penalties"
+                    android:textSize="25sp"/>
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_fouldInTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Foul"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_techFoulInTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Tech Foul"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_yellowCardInTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Yellow Card"/>
+
+                    <CheckBox
+                        android:id="@+id/rb_redCardInTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Red Card"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_noShowTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="No Show"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_disqualificationTele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Disqualification"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_diabledQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disabled"
+                    android:textSize="25sp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_whoMatchDisabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:text="Whole Match"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_halfMatchDisabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:text="Half Match"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_endMatchDisabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:text="End Match"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_EndMatchSouting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cornflowerBlue"
+                    android:text="End Match"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/auto_tele_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

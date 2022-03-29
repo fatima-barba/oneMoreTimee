@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_match_auto"
+        android:icon="@drawable/icon_scouting"
+        android:title="Auto"/>
+
+    <item
+        android:id="@+id/nav_match_tele"
+        android:icon="@drawable/icon_scouting"
+        android:title="Tele"/>
+
+</menu>
