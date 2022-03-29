@@ -191,6 +191,15 @@
     <color name="darkLightCyan">#8DC8D8</color>
     <color name="mediocreLightCyan">#72BBCE</color>
 
+    <!--Rapid React color palette-->
+    <color name="rapidRaectDarkGreen">#3C7B3B</color>
+    <color name="rapidRaectLimeGreen">#A5CA18</color>
+    <color name="rapidRaectAwkwardGreen">#CFE385</color>
+    <color name="rapidRaectDarkBlue">#1E5AA8</color>
+    <color name="rapidRaectLightBlue">#68C3E2</color>
+    <color name="rapidRaectPastelBlue">#C8E9F5</color>
+
+
     <!--dark mode blue -->
     <color name="darkBlueDefault">#001233</color>
 
