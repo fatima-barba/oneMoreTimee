@@ -194,41 +194,108 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Climbing"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/tv_attemptedClimbingRungs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attempted"
                     android:textSize="20sp"/>
 
-                <RadioGroup
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/rb_lowerRungClimbTele"
+                    <CheckBox
+                        android:id="@+id/cb_attemptedLow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:ems="9"
+                        android:ems="18"
                         android:text="Low"/>
 
-                    <RadioButton
-                        android:id="@+id/rb_midRungClimbTele"
+                    <CheckBox
+                        android:id="@+id/cb_attemptedMid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:ems="9"
+                        android:ems="18"
                         android:text="Mid"/>
+                </LinearLayout>
 
-                    <RadioButton
-                        android:id="@+id/rb_highRungClimbTele"
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_attemptedHigh"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:ems="9"
+                        android:ems="18"
                         android:text="High"/>
 
-                    <RadioButton
-                        android:id="@+id/rb_traversalRungClimbTele"
+                    <CheckBox
+                        android:id="@+id/cb_attemptedTraversal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:ems="9"
+                        android:ems="18"
                         android:text="Traversal"/>
-                </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_successfulClimbingRungs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Successful"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_successfulLow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Low"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_successfulMid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Mid"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/matchTeleLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_successfulHigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="High"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_successfulTraversal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="18"
+                        android:text="Traversal"/>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_penaltiesQuestion"
