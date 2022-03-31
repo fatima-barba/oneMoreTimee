@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/veryEpicLightGray">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,21 +13,30 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">>
+            android:orientation="vertical"><![CDATA[>
+
+            ]]>
 
             <TextView
                 android:id="@+id/tv_autoTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Autonomous Questions"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="28sp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/rapidRaectDarkBlue"/>
 
             <TextView
                 android:id="@+id/tv_autoQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:text="Do you have an auto?"
                 android:textSize="18sp" />
 
@@ -135,7 +145,10 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:max="10"
-                android:progress="0"/>
+                android:progress="0"
+                android:progressDrawable="@drawable/track"
+                android:thumb="@drawable/thumb"
+                android:indeterminate="false"/>
 
             <TextView
                 android:id="@+id/tv_autoCargoUpperAmount"
@@ -147,10 +160,10 @@
             <EditText
                 android:id="@+id/et_autoCargoUpperAmount"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="ex: 1,2"/>.
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: one, two" />.
 
             <TextView
                 android:id="@+id/tv_autoCargoLowerAmount"
@@ -162,18 +175,26 @@
             <EditText
                 android:id="@+id/et_autoCargoLowerAmount"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="ex: 1,2"/>.
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: one, two"/>.
 
             <TextView
                 android:id="@+id/tv_teleTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tele-op Questions"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="28sp" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/rapidRaectDarkBlue"/>
 
             <TextView
                 android:id="@+id/tv_teleScoreUpperLower"
@@ -205,10 +226,10 @@
             <EditText
                 android:id="@+id/et_teleCargoHoldAmount"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="Ex: 1,2"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: one, two"/>
 
             <TextView
                 android:id="@+id/tv_teleFieldShootQuestion"
@@ -220,9 +241,10 @@
             <EditText
                 android:id="@+id/et_teleFieldPlace"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="ex: near the hub, at launchpad"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: near the hub, at launchpad"/>
 
             <TextView
                 android:id="@+id/tw_teleUpperAmount"
@@ -234,9 +256,10 @@
             <EditText
                 android:id="@+id/et_teleUpperAmount"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="ex: 1,2"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: one, two"/>
 
             <TextView
                 android:id="@+id/tw_teleLowerAmount"
@@ -248,9 +271,10 @@
             <EditText
                 android:id="@+id/et_teleLowerAmount"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="ex: 1,2"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: one, two"/>
 
             <TextView
                 android:id="@+id/tv_teleDefenseQuestion"
@@ -299,15 +323,26 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:max="10"
-                android:progress="0"/>
+                android:progress="0"
+                android:progressDrawable="@drawable/track"
+                android:thumb="@drawable/thumb"
+                android:indeterminate="false"/>
 
             <TextView
                 android:id="@+id/tv_endGameTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="End Game Questions"
                 android:textAlignment="center"
                 android:textSize="28sp"/>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/rapidRaectDarkBlue" />
 
             <TextView
                 android:id="@+id/tv_endGameClimbYesNoQuestion"
@@ -470,9 +505,17 @@
                 android:id="@+id/tv_robotInfoTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Robot Info Questions"
                 android:textAlignment="center"
                 android:textSize="28sp"/>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/rapidRaectDarkBlue" />
 
             <TextView
                 android:id="@+id/tv_robotChassisQuestion"
@@ -558,9 +601,10 @@
             <EditText
                 android:id="@+id/et_driveTrainAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ex: Swerve Drive,H Drive,West Coast Drive"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Swerve Drive, H Drive, West Coast Drive"/>
             <TextView
                 android:id="@+id/tv_shiftingGearboxSettingQuestion"
                 android:layout_width="match_parent"
@@ -571,9 +615,10 @@
             <EditText
                 android:id="@+id/et_shiftingGearboxAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ex: High Speed, Low Speed"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: High Speed, Low Speed"/>
             <TextView
                 android:id="@+id/tv_intake"
                 android:layout_width="match_parent"
@@ -584,9 +629,10 @@
             <EditText
                 android:id="@+id/et_intakeAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ex: Roller Intake,Beaver Tail"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Roller Intake, Beaver Tail"/>
             <TextView
                 android:id="@+id/tv_mechanism"
                 android:layout_width="match_parent"
@@ -597,8 +643,10 @@
             <EditText
                 android:id="@+id/et_mechanismAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10" android:hint="Ex: Arm,Shooter"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Arm, Shooter"/>
             <TextView
                 android:id="@+id/tv_programmingLanguageRobot"
                 android:layout_width="match_parent"
@@ -609,9 +657,10 @@
             <EditText
                 android:id="@+id/et_programmingLanguageRobotAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ex: Java,Python,C++"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Java, Python, C++"/>
             <TextView
                 android:id="@+id/tv_programmingLanguageApp"
                 android:layout_width="match_parent"
@@ -622,10 +671,10 @@
             <EditText
                 android:id="@+id/et_programmingLanguageAppAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-
-                android:hint="Ex: Java, Python, Kotlin"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Java, Python, Kotlin"/>
             <TextView
                 android:id="@+id/tv_climbingMechanism"
                 android:layout_width="match_parent"
@@ -636,14 +685,16 @@
             <EditText
                 android:id="@+id/et_climbingMechanismAnswer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Ex: Telescoping,Multiple Arms,Grappling Hook"/>
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="20"
+                android:hint=" Ex: Telescoping, Multiple Arms, Grappling Hook"/>
 
             <Button
                 android:id="@+id/btn_finishPitScouting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Finish Pit Scouting" />
 
 

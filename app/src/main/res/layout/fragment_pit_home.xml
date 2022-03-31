@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/veryEpicLightGray">
 
     <TextView
         android:id="@+id/tv_pitScoutingTitle"
@@ -20,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="9dp"
-        android:background="@color/cornflowerBlue"
+        android:background="@color/rapidRaectDarkBlue"
         app:layout_constraintBottom_toBottomOf="@+id/tv_pitScoutingTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -42,7 +43,7 @@
         android:id="@+id/tv_pitScoutingStepTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2.Tap Start Pit Scouting and fill out questions"
+        android:text="2.Tap Start Pit Scouting"
         android:textSize="25sp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3.When finished tap Finish Pit Scouting"
+        android:layout_marginLeft="15dp"
         android:textSize="25sp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,11 +71,11 @@
 
     <Button
         android:id="@+id/btn_startPitScouting"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Start Pit Scouting"
         android:textSize="15sp"
-        android:backgroundTint="@color/cornflowerBlue"
+        android:background="@drawable/pit_scouting_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

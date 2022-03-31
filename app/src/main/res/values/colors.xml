@@ -199,7 +199,9 @@
     <color name="rapidRaectLightBlue">#68C3E2</color>
     <color name="rapidRaectPastelBlue">#C8E9F5</color>
 
-
+    <color name="veryEpicLightGray">#e0e0e0</color>
+    <color name= "offWhite">#FAF9F6</color>
+    <color name= "transparent">#00FFFFFF</color>
     <!--dark mode blue -->
     <color name="darkBlueDefault">#001233</color>
 
