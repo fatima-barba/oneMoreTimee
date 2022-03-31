@@ -7,14 +7,21 @@
         <entry key="..\:/Users/Scouting/Documents/oneMoreTimee/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Scouting/Documents/oneMoreTimee/app/src/main/res/layout/fragment_create_events.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/Scouting/Documents/oneMoreTimee/app/src/main/res/layout/fragment_create_teams.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/icon_auto_tele.xml" value="0.1" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/icon_end.xml" value="0.1" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/icon_name.xml" value="0.1" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/icon_start.xml" value="0.1" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/plus_button.xml" value="0.117" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/thumb.xml" value="0.1" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/drawable/track.xml" value="0.1" />
         <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/activity_main.xml" value="0.20673076923076922" />
-        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_create_events.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_create_events.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_create_teams.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_auto.xml" value="0.1" />
-        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_home.xml" value="0.1" />
-        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_tele.xml" value="0.5978695073235686" />
-        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_pit_active.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_auto.xml" value="0.559254327563249" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_home.xml" value="0.5222222222222223" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_match_tele.xml" value="0.4199346405228758" />
+        <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_pit_active.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/layout/fragment_pit_home.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/miman/OneDrive/Documents/Android Projects/App Apps/oneMoreTime/app/src/main/res/menu/auto_tele_bar.xml" value="0.4466666666666667" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.259" />

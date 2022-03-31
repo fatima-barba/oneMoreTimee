@@ -6,7 +6,8 @@
     android:id="@+id/matchAutoLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/veryEpicLightGray">
 
     <LinearLayout
         android:id="@+id/matchAutoLayout1"
@@ -40,7 +41,7 @@
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:background="@color/cornflowerBlue"/>
+        android:background="@color/rapidRaectDarkBlue"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/matchAutoLayout2"
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content"
             android:ems="9"
             android:text="Upper Hub"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
@@ -65,12 +67,12 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/lightGreen"
             android:ems="9"
-            android:textSize="20sp"
             android:text="+"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_upperScoreAuto" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_upperHubAutoHeader" />
 
         <TextView
             android:id="@+id/tv_upperScoreAuto"
@@ -78,6 +80,7 @@
             android:layout_height="wrap_content"
             android:ems="9"
             android:text="Score"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_autoMinusL"
@@ -104,6 +107,7 @@
             android:layout_height="wrap_content"
             android:ems="9"
             android:text="Lower Hub"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +133,7 @@
             android:layout_height="wrap_content"
             android:ems="9"
             android:text="Score"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_autoMinusR"
@@ -164,6 +169,7 @@
                 android:layout_height="wrap_content"
                 android:ems="20"
                 android:text="Score"
+                android:textStyle="bold"
                 android:textSize="25sp" />
 
             <CheckBox

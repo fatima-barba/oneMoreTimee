@@ -3,5 +3,5 @@
     android:shape="ractange"/>
     <solid android:color="?attr/colorOnPrimary"/>
     <corners android:radius="100dp"/>
-    <stroke android:color="?attr/iconTint" android:width="6dp"/>
+    <stroke android:color="?attr/iconTint" android:width="1dp"/>
 </shape>

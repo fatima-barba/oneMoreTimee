@@ -5,7 +5,8 @@
     android:id="@+id/matchTeleLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/veryEpicLightGray">
 
     <LinearLayout
         android:id="@+id/matchTeleLayout1"
@@ -39,7 +40,7 @@
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:background="@color/cornflowerBlue"/>
+        android:background="@color/rapidRaectDarkBlue"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -168,6 +169,7 @@
                     android:layout_height="wrap_content"
                     android:ems="20"
                     android:text="Score"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <CheckBox
@@ -188,12 +190,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Endgame"
+                    android:textStyle="bold"
                     android:textSize="25sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Climbing"
+                    android:textStyle="italic"
                     android:textSize="25sp"/>
 
                 <TextView
@@ -302,6 +306,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Penalties"
+                    android:textStyle="bold"
                     android:textSize="25sp"/>
 
                 <LinearLayout
@@ -372,6 +377,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Disabled"
+                    android:textStyle="bold"
                     android:textSize="25sp"/>
 
                 <RadioGroup
@@ -405,7 +411,7 @@
                     android:id="@+id/btn_EndMatchSouting"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/cornflowerBlue"
+                    android:backgroundTint="@color/rapidRaectDarkBlue"
                     android:text="End Match"/>
             </LinearLayout>
         </ScrollView>
