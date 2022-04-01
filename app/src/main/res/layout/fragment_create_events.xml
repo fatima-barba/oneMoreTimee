@@ -27,16 +27,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/eventStart"
+        android:id="@+id/eventDate"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_text_background"
-        android:drawableStart="@drawable/icon_start"
+        android:drawableStart="@drawable/ic_event_date"
         android:drawablePadding="20dp"
         android:textSize="14sp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Event Start (1/15/2022)"
+        android:hint="Event Date (Ex: 1/12/22)"
         android:paddingEnd="12dp"
         android:paddingStart="12dp"
         app:layout_constraintVertical_bias="0.376"
@@ -46,15 +46,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/eventEnd"
+        android:id="@+id/eventID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_text_background"
-        android:drawableStart="@drawable/icon_end"
+        android:drawableStart="@drawable/ic_comp_id"
         android:drawablePadding="20sp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="End Event (1/15/2022)"
+        android:hint="Competition ID"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:textSize="14sp"
