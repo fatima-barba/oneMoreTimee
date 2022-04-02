@@ -17,5 +17,7 @@ public class App extends Application {
         databaseHelper = new DatabaseHelper();
         DatabaseManager.initializedInstance(databaseHelper);
     }
-    public static Context getContext() return context;
+    public static Context getContext() {
+        return context;
+    }
 }

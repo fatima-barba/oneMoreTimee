@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/eventDate"
+        android:id="@+id/et_eventDate"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_text_background"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/eventID"
+        android:id="@+id/et_eventID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_text_background"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/createEvent"
+        android:id="@+id/btn_createEvent"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
@@ -74,5 +74,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventEnd" />
+        app:layout_constraintTop_toBottomOf="@+id/et_eventID" />
 </androidx.constraintlayout.widget.ConstraintLayout>
