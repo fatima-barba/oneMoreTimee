@@ -65,4 +65,5 @@
     <string name="rb_halfMatchDisabled">Half Match</string>
     <string name="rb_endMatchDisabled">End Match</string>
     <string name="btn_EndMatchSouting">End Match</string>
+    <string name="menu_home">home</string>
 </resources>
