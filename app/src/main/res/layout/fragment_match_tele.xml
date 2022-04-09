@@ -19,21 +19,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Team:"/>
+            android:text="@string/tv_teamTele"/>
 
         <TextView
             android:id="@+id/tv_matchTele"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Match:"/>
+            android:text="@string/tv_matchTele"/>
 
         <TextView
             android:id="@+id/tv_allianceTele"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Alliance:"/>
+            android:text="@string/tv_allianceTele"/>
     </LinearLayout>
 
     <View
@@ -46,12 +46,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <View
+            android:id="@+id/view13"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/rapidRaectDarkBlue"
+            app:layout_constraintEnd_toEndOf="@+id/tv_upperScoreTele" />
+
         <TextView
             android:id="@+id/tv_upperHubTeleHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Upper Hub"
+            android:text="@string/tv_upperHubTeleHeader"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/scrollView2"
@@ -63,8 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:backgroundTint="@color/lightGreen"
-            android:ems="9"
-            android:text="+"
+            android:ems="8"
+            android:text="@string/btn_telePlusL"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/scrollView2"
@@ -76,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Score"
+            android:text="@string/tv_upperScoreTele"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_teleMinusL"
@@ -89,8 +96,8 @@
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:backgroundTint="@color/lightRed"
-            android:ems="9"
-            android:text="-"
+            android:ems="8"
+            android:text="@string/btn_teleMinusL"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
@@ -102,7 +109,7 @@
             android:layout_width="214dp"
             android:layout_height="26dp"
             android:ems="9"
-            android:text="Lower Hub"
+            android:text="@string/tv_lowerHubTeleHeader"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +122,7 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/lightGreen"
             android:ems="9"
-            android:text="+"
+            android:text="@string/btn_telePlusR"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Score"
+            android:text="@string/tv_lowerScoreTele"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_teleMinusR"
@@ -141,7 +148,7 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/lightRed"
             android:ems="9"
-            android:text="-"
+            android:text="@string/btn_teleMinusR"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
@@ -168,35 +175,48 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="20"
-                    android:text="Score"
+                    android:text="@string/tv_scoreQuestionTele"
                     android:textStyle="bold"
                     android:textSize="25sp" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="600dp"
+                    android:layout_height="5dp"
+                    android:background="@color/rapidRaectDarkBlue"/>
 
                 <CheckBox
                     android:id="@+id/cb_upperHubShotTele"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Upper Hub"/>
+                    android:text="@string/cb_upperHubShotTele"/>
 
 
                 <CheckBox
                     android:id="@+id/cb_lowerHubShotTele"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lower Hub"/>
+                    android:text="@string/cb_lowerHubShotTele"/>
 
                 <TextView
                     android:id="@+id/tv_endGameQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Endgame"
+                    android:text="@string/tv_endGameQuestion"
                     android:textStyle="bold"
                     android:textSize="25sp"/>
 
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="600dp"
+                    android:layout_height="5dp"
+                    android:background="@color/rapidRaectDarkBlue"/>
+
                 <TextView
+                    android:id="@+id/tv_climbingQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Climbing"
+                    android:text="@string/tv_climbingQuestion"
                     android:textStyle="italic"
                     android:textSize="25sp"/>
 
@@ -204,7 +224,7 @@
                     android:id="@+id/tv_attemptedClimbingRungs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Attempted"
+                    android:text="@string/tv_attemptedClimbingRungs"
                     android:textSize="20sp"/>
 
                 <LinearLayout
@@ -218,14 +238,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Low"/>
+                        android:text="@string/cb_attemptedLow"/>
 
                     <CheckBox
                         android:id="@+id/cb_attemptedMid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Mid"/>
+                        android:text="@string/cb_attemptedMid"/>
                 </LinearLayout>
 
 
@@ -240,21 +260,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="High"/>
+                        android:text="@string/cb_attemptedHigh"/>
 
                     <CheckBox
                         android:id="@+id/cb_attemptedTraversal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Traversal"/>
+                        android:text="@string/cb_attemptedTraversal"/>
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_successfulClimbingRungs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Successful"
+                    android:text="@string/tv_successfulClimbingRungs"
                     android:textSize="20sp"/>
 
                 <LinearLayout
@@ -268,14 +288,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Low"/>
+                        android:text="@string/cb_successfulLow"/>
 
                     <CheckBox
                         android:id="@+id/cb_successfulMid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Mid"/>
+                        android:text="@string/cb_successfulMid"/>
 
                 </LinearLayout>
 
@@ -291,23 +311,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="High"/>
+                        android:text="@string/cb_successfulHigh"/>
 
                     <CheckBox
                         android:id="@+id/cb_successfulTraversal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Traversal"/>
+                        android:text="@string/cb_successfulTraversal"/>
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_penaltiesQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Penalties"
+                    android:text="@string/tv_penaltiesQuestion"
                     android:textStyle="bold"
                     android:textSize="25sp"/>
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="600dp"
+                    android:layout_height="5dp"
+                    android:background="@color/rapidRaectDarkBlue"/>
 
                 <LinearLayout
                     android:id="@+id/matchTeleLayout4"
@@ -320,14 +346,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Foul"/>
+                        android:text="@string/cb_fouldInTele"/>
 
                     <CheckBox
                         android:id="@+id/cb_techFoulInTele"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Tech Foul"/>
+                        android:text="@string/cb_techFoulInTele"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -341,14 +367,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Yellow Card"/>
+                        android:text="@string/cb_yellowCardInTele"/>
 
                     <CheckBox
                         android:id="@+id/rb_redCardInTele"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Red Card"/>
+                        android:text="@string/rb_redCardInTele"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -362,23 +388,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="No Show"/>
+                        android:text="@string/cb_noShowTele"/>
 
                     <CheckBox
                         android:id="@+id/cb_disqualificationTele"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="18"
-                        android:text="Disqualification"/>
+                        android:text="@string/cb_disqualificationTele"/>
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv_diabledQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Disabled"
+                    android:text="@string/tv_diabledQuestion"
                     android:textStyle="bold"
                     android:textSize="25sp"/>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="600dp"
+                    android:layout_height="5dp"
+                    android:background="@color/rapidRaectDarkBlue"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -390,21 +422,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="12"
-                        android:text="Whole Match"/>
+                        android:text="@string/rb_whoMatchDisabled"/>
 
                     <RadioButton
                         android:id="@+id/rb_halfMatchDisabled"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="12"
-                        android:text="Half Match"/>
+                        android:text="@string/rb_halfMatchDisabled"/>
 
                     <RadioButton
                         android:id="@+id/rb_endMatchDisabled"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="12"
-                        android:text="End Match"/>
+                        android:text="@string/rb_endMatchDisabled"/>
                 </RadioGroup>
 
                 <Button
@@ -412,7 +444,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/rapidRaectDarkBlue"
-                    android:text="End Match"/>
+                    android:text="@string/btn_EndMatchSouting"/>
             </LinearLayout>
         </ScrollView>
 

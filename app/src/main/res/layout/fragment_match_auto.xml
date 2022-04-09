@@ -20,21 +20,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Text:"/>
+            android:text="@string/tv_teamAuto"/>
 
         <TextView
             android:id="@+id/tv_matchAuto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Match:"/>
+            android:text="@string/tv_matchAuto"/>
 
         <TextView
             android:id="@+id/tv_allianceAuto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Alliance:"/>
+            android:text="@string/tv_allianceAuto"/>
     </LinearLayout>
 
     <View
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Upper Hub"
+            android:text="@string/tv_upperHubAutoHeader"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -67,7 +67,7 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/lightGreen"
             android:ems="9"
-            android:text="+"
+            android:text="@string/btn_autoPlusL"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/matchAutoLayout3"
@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Score"
+            android:text="@string/tv_upperScoreAuto"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -94,7 +94,7 @@
             android:layout_height="70dp"
             android:backgroundTint="@color/lightRed"
             android:ems="9"
-            android:text="-"
+            android:text="@string/btn_autoMinusL"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/auto_tele_bar"
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Lower Hub"
+            android:text="@string/tv_lowerHubAutoHeader"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -119,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="70sp"
             android:ems="9"
-            android:text="+"
+            android:text="@string/btn_autoPlusR"
             android:backgroundTint="@color/lightGreen"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -132,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="9"
-            android:text="Score"
+            android:text="@string/tv_lowerScoreAuto"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -146,7 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:ems="9"
-            android:text="-"
+            android:text="@string/btn_autoMinusR"
             android:backgroundTint="@color/lightRed"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -168,39 +168,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="20"
-                android:text="Score"
+                android:text="@string/tv_scoreQuestionAuto"
                 android:textStyle="bold"
                 android:textSize="25sp" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="600dp"
+                android:layout_height="5dp"
+                android:background="@color/rapidRaectDarkBlue" />
 
             <CheckBox
                 android:id="@+id/cb_taxiing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Taxiing" />
+                android:text="@string/cb_taxiing" />
 
             <CheckBox
                 android:id="@+id/cb_humanPlayerUpper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Human Player Upper Hub" />
+                android:text="@string/cb_humanPlayerUpper" />
 
             <CheckBox
                 android:id="@+id/humanPlayerLower_checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Human Player Lower Hub" />
+                android:text="@string/humanPlayerLower_checkBox" />
 
             <CheckBox
                 android:id="@+id/cb_upperHubAuto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upper Hub" />
+                android:text="@string/cb_upperHubAuto" />
 
             <CheckBox
                 android:id="@+id/cb_lowerHubAuto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lower Hub" />
+                android:text="@string/cb_lowerHubAuto" />
         </LinearLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

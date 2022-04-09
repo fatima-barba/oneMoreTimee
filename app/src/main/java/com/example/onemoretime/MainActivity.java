@@ -20,3 +20,4 @@ public class MainActivity extends AppCompatActivity implements DialogListener {
         setContentView(R.layout.activity_main);
     }
 }
+
